@@ -1,0 +1,6 @@
+# ModelSim
+work/
+/**/*.bak
+/**/*.mti
+/**/*.mpf
+/**/*.wlf
