@@ -60,17 +60,3 @@ begin
     wait;
   end process;
 end tb;
-
-  -- stimulus process
-  stim_proc : process
-  begin        
-    for i in 0 to 15 loop
-      byte(7 downto 4) <= conv_std_logic_vector(i,4);
-      byte(3 downto 0) <= conv_std_logic_vector(i,4);
-
-      wait for period;
-    end loop;
-
-    wait;
-  end process;
-end tb;
