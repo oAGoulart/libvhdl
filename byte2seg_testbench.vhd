@@ -51,9 +51,8 @@ begin
   -- stimulus process
   stim_proc : process
   begin        
-    for i in 0 to 15 loop
-      byte(7 downto 4) <= conv_std_logic_vector(i,4);
-      byte(3 downto 0) <= conv_std_logic_vector(i,4);
+    for x in 0 to 255 loop
+      byte <= conv_std_logic_vector(x, 8);
 
       wait for period;
     end loop;
